@@ -13,4 +13,11 @@ Mask => NB IP is some bytes which stay + 1
 /27 8 8 8 3  => 2^4 + 2^3 + 2^2 + 2^1 + 2^0 + 1 = 16 + 8 + 4 + 2 + 1 + 1 => 32 IPs
 ...
 /0 all the IPs
+
+/32 => No IP number can change
+/24 => Last IP number can change
+/16 => Last IP 2 numbers can change
+/8  => Last IP 3 numbers can change
+/0  => All IP numbers can change
 ```
+
