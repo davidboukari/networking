@@ -3,6 +3,7 @@
 ## networking mask
 ```
 ## Networking
+### netwoking CIDR
 By default AWS network is class B
 Mask => NB IP is some bytes which stay + 1
 /32 8 8 8 8 -> 1 IPs
@@ -25,5 +26,14 @@ Mask => NB IP is some bytes which stay + 1
 /16 => Last IP 2 numbers can change
 /8  => Last IP 3 numbers can change
 /0  => All IP numbers can change
+
+Ex: The CIDR 134.56.78.0/22  represents...
+78 = 64 + 8 + 4 + 2
+     0 1 0 0 1 1 1 0
+1st IP set all bit mask to 0
+     0 1 0 0 1 1 0 0 => 64 + 8 + 4 => 76
+Last IP set bit mask to 1
+     0 1 0 0 1 1 1 1 => 64 + 8 + 4 + 2 + 1 => 79
+=> 134.56.76.0 to 134.56.79.255
 ```
 
